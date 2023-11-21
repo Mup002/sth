@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <welcome-file-list>
+        <welcome-file>gdDangNhap.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>QuanLy</servlet-name>
+        <jsp-file>/gdChinhQuanLy.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuanLy</servlet-name>
+        <url-pattern>/qly</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>KhachHang</servlet-name>
+        <jsp-file>/gdChinhKhach.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>KhachHang</servlet-name>
+        <url-pattern>/kh</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>XemBaoCaoServlet</servlet-name>
+        <jsp-file>/gdXembaocao.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>XemBaoCaoServlet</servlet-name>
+        <url-pattern>/xembaocao</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>XemThongKeNCCServlet</servlet-name>
+        <jsp-file>/gdThongKeNCC.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>XemThongKeNCCServlet</servlet-name>
+        <url-pattern>/ncc</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>XemThongKeCacLanNhapHangServlet</servlet-name>
+        <jsp-file>/gdThongKeCacLanNhap.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>XemThongKeCacLanNhapHangServlet</servlet-name>
+        <url-pattern>/thongkecaclannhaphang</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>XemThongKeNhapHangServlet</servlet-name>
+        <jsp-file>/gdThongKeHangHoa.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>XemThongKeNhapHangServlet</servlet-name>
+        <url-pattern>/tknhaphang</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>XemThongKeHoaDon</servlet-name>
+        <jsp-file>/gdThongKeHoadon.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>XemThongKeHoaDon</servlet-name>
+        <url-pattern>/thonkehoadon</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ChiTietDonHang</servlet-name>
+        <jsp-file>/gdChiTietDonHang.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChiTietDonHang</servlet-name>
+        <url-pattern>/chitiet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
